@@ -208,8 +208,38 @@ a:hover {
   width: 40px;
 }
 
-/* Loading */
+a {
+  text-decoration: none !important;
+  color: var(--light-textcolor);
+}
 
+/* Style the scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Adjust the width as needed */
+  background-color: var(--accent-color);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Change the background color on hover */
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--darkblack) /* Change the color of the track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--accent-color); /* Change the color of the scrollbar handle */
+  border-radius: 6px; /* Optional: Add rounded corners to the scrollbar handle */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+ 
+  background: var(--side-bgcolor); /* Change the color of the scrollbar handle on hover */
+}
 
 
 
