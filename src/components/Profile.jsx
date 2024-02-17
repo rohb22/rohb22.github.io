@@ -4,9 +4,11 @@ export default function Profile() {
     return (
         <div id="profile-container">
             <img src={Photo} id="profilephoto"/>
-            <h2>I'm <span id="profilename">Rohb,</span></h2>
-            <p>A Computer Engineering</p>
-            <p>Student</p>
+            <div id="profile-content">
+                <h3>I'm <span id="profilename">Rohb,</span></h3>
+                <p>A Computer Engineering</p>
+                <p>Student</p>
+            </div>
         </div>
     )
 }
