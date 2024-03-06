@@ -2,61 +2,61 @@
     "skills" : [
         {
             "id": 1,
-            "path": "/src/assets/icons/c.svg",
+            "path": "/icons/c.svg",
             "name": "C"
         
         },
         {
             "id": 2,
-            "path": "/src/assets/icons/cpp.svg",
+            "path": "/icons/cpp.svg",
             "name": "C++"
         
         },
         {
             "id": 3,
-            "path": "/src/assets/icons/css3.svg",
+            "path": "/icons/css3.svg",
             "name": "CSS"
         
         },
         {
             "id": 4,
-            "path": "/src/assets/icons/git.svg",
+            "path": "/icons/git.svg",
             "name": "Git"
         
         },
         {
             "id": 5,
-            "path": "/src/assets/icons/github.svg",
+            "path": "/icons/github.svg",
             "name": "Github"
         
         },
         {
             "id": 6,
-            "path": "/src/assets/icons/html5.svg",
+            "path": "/icons/html5.svg",
             "name": "HTML"
         
         },
         {
             "id": 7,
-            "path": "/src/assets/icons/java.svg",
+            "path": "/icons/java.svg",
             "name": "Java"
         
         },
         {
             "id": 8,
-            "path": "/src/assets/icons/javascript.svg",
+            "path": "/icons/javascript.svg",
             "name": "Javascript"
         
         },
         {
             "id": 9,
-            "path": "/src/assets/icons/python.svg",
+            "path": "/icons/python.svg",
             "name": "Python"
         
         },
         {
             "id": 10,
-            "path": "/src/assets/icons/react.svg",
+            "path": "/icons/react.svg",
             "name": "React"
        
         }

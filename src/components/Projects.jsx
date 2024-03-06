@@ -1,5 +1,5 @@
 import React from "react"
-import ayanontimer from "../assets/project-screenshots/ayanontimer.png"
+import projectsdb from "../projects.json"
 
 function Project({photo, name, githubLink, siteLink}) {
     return (
@@ -13,13 +13,13 @@ function Project({photo, name, githubLink, siteLink}) {
 }
 
 export default function Projects() {
-    const ayanontimergithub = "https://github.com/rohb22/ayanontimer";
-    const ayanontimersite = "https://ayanontimer.web.app/";
     return (
         <div id="projects-container">
             <h3>Projects</h3>
             <div id="projects">
-                <Project photo={ayanontimer} name="Ayanon Timer" githubLink={ayanontimergithub} siteLink={ayanontimersite} />
+                {projectsdb.projects.map((item, i) => (
+                    <Project photo={item.photo} name={item.name} githubLink={item.repoLink} siteLink={item.siteLink} key={i} />
+                ))}
             </div>
         </div>
     )

@@ -1,6 +1,4 @@
 import React, { useEffect, useState } from "react";
-import linkedinIcon from "../assets/icons/linkedin.svg";
-import githubIcon from "../assets/icons/github.svg";
 import emailjs from "emailjs-com";
 
 export default function Contacts() {
@@ -62,10 +60,10 @@ export default function Contacts() {
       </form>
       <div id="contact-icons">
         <a target="_blank" href="https://github.com/rohb22">
-          <img src={githubIcon} alt="My github profile" />
+          <img src="/icons/github.svg" alt="My github profile" />
         </a>
         <a target="_blank" href="https://www.linkedin.com/in/rohb22/">
-          <img src={linkedinIcon} alt="My linkedin profile" />
+          <img src="/icons/linkedin.svg" alt="My linkedin profile" />
         </a>
       </div>
     </div>
