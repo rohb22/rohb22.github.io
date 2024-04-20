@@ -24,12 +24,7 @@
             "name": "Git"
         
         },
-        {
-            "id": 5,
-            "path": "/icons/github.svg",
-            "name": "Github"
-        
-        },
+
         {
             "id": 6,
             "path": "/icons/html5.svg",
