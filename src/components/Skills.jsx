@@ -1,6 +1,7 @@
 import React from "react";
 import skillsdb from "../skills.json";
 
+
 function Skill({ icon, name }) {
     return (
         <div className="icon-container">

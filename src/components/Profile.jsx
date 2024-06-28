@@ -1,5 +1,7 @@
 import React from "react";
 import Photo from "../assets/profile.png";
+
+
 export default function Profile() {
     return (
         <div id="profile-container">

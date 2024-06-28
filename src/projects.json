@@ -3,7 +3,7 @@
         {
             "id": 1,
             "name": "Ayanon Timer",
-            "siteLink": "https://ayanontimer.web.app/",
+            "siteLink": [false, "https://ayanontimer.web.app/"],
             "repoLink": "https://github.com/rohb22/ayanontimer",
             "photo": "/project-screenshots/ayanontimer.png"
         }
