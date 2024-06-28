@@ -1,0 +1,33 @@
+/* PROFILE */
+
+#profilephoto {
+    width: 150px;
+    height: 150px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+  }
+  
+  #profile-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #profile-container > h2, #profile-container > p {
+    margin: 0;
+    line-height: 25px;
+    color: var(--light-textcolor);
+  }
+  
+  #profilename {
+    color: var(--accent-color)
+  }
+  
+  #profile-content > *{
+    padding: 1px;
+    margin: 0;
+    text-align: center;
+  }
+  
+  

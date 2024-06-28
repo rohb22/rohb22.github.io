@@ -1,0 +1,30 @@
+/* SKILLS */
+
+#skills-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--light-textcolor);
+    padding: 10px;
+  }
+  
+  #skills {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .icon-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: var(--side-bgcolor);
+  }
+  
