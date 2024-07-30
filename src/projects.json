@@ -2,10 +2,18 @@
     "projects": [
         {
             "id": 1,
-            "name": "Ayanon Timer",
-            "siteLink": [false, "https://ayanontimer.web.app/"],
-            "repoLink": "https://github.com/rohb22/ayanontimer",
-            "photo": "/project-screenshots/ayanontimer.png"
+            "name": "ToDo List",
+            "siteLink": null,
+            "repoLink": "https://github.com/rohb22/todo-list",
+            "photo": "/project-screenshots/todolist.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Project Manager",
+            "siteLink": null,
+            "repoLink": "https://github.com/rohb22/Project-Manager",
+            "photo": "/project-screenshots/projectmanager.jpg"
         }
+
     ]
 }
