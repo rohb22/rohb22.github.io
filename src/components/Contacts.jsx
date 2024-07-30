@@ -36,7 +36,10 @@ export default function Contacts() {
     <div id="contact-div">
       <h3>Contacts</h3>
       <p>
-        Email me directly at <u>rohbpaloma@gmail.com</u> or fill up this form!
+        Email me directly at <u>rohbpaloma@gmail.com</u> or <s>fill up this form!</s>
+      </p>
+      <p>
+      (not currently functioning due to lack of backend to handle api calls)
       </p>
       <form id="contact-form" onSubmit={handleFormSubmit}>
         <label htmlFor="sender">Your Email:</label>
@@ -47,6 +50,7 @@ export default function Contacts() {
           onChange={(e) => setSender(e.target.value)}
           required
           autoComplete="off"
+          disabled
         />
         <br />
         <label htmlFor="message">Message:</label>
@@ -55,9 +59,10 @@ export default function Contacts() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
+          disabled
         ></textarea>
         <br />
-        <input id="sbmt" type="submit" value="Send Email" />
+        <input id="sbmt" type="submit" value="Send Email"  disabled/>
       </form>
       <div id="contact-icons">
         <a target="_blank" href="https://github.com/rohb22">
