@@ -1,31 +1,34 @@
 import React, { useEffect, useState } from "react";
-import emailjs from "emailjs-com";
 
 
 export default function Contacts() {
   const [sender, setSender] = useState("");
   const [message, setMessage] = useState("");
 
-  useEffect(() => {
-    emailjs.init('iDiPKliQfX-8IcTJa');
-  }, []);
+
+
+  const sendEmail = async (sender, message) => {
+    try {
+      const response = await fetch('http://localhost:5000/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ sender, message }),
+      });
+  
+      const data = await response.json();
+      console.log('Email sent successfully:', data);
+    } catch (error) {
+      console.error('Error sending email:', error);
+    }
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
 
-    emailjs
-      .send("service_ase424c", "template_67seuzu", {
-        from_name: sender,
-        message: message,
-      })
-      .then(
-        function (response) {
-          alert("Email sent successfully!");
-        },
-        function (error) {
-          alert("Email could not be sent. Please try again later.");
-        }
-      );
+    sendEmail(sender, message);
+    
 
     // Clear the form
     setSender("");
@@ -36,10 +39,7 @@ export default function Contacts() {
     <div id="contact-div">
       <h3>Contacts</h3>
       <p>
-        Email me directly at <u>rohbpaloma@gmail.com</u> or <s>fill up this form!</s>
-      </p>
-      <p>
-      (not currently functioning due to lack of backend to handle api calls)
+        Email me directly at <u>rohbpaloma@gmail.com</u> or fill up this form!
       </p>
       <form id="contact-form" onSubmit={handleFormSubmit}>
         <label htmlFor="sender">Your Email:</label>
@@ -50,7 +50,6 @@ export default function Contacts() {
           onChange={(e) => setSender(e.target.value)}
           required
           autoComplete="off"
-          disabled
         />
         <br />
         <label htmlFor="message">Message:</label>
@@ -59,10 +58,9 @@ export default function Contacts() {
           value={message}
           onChange={(e) => setMessage(e.target.value)}
           required
-          disabled
         ></textarea>
         <br />
-        <input id="sbmt" type="submit" value="Send Email"  disabled/>
+        <input id="sbmt" type="submit" value="Send Email"/>
       </form>
       <div id="contact-icons">
         <a target="_blank" href="https://github.com/rohb22">
