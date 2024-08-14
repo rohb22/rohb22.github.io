@@ -9,7 +9,7 @@ export default function Contacts() {
 
   const sendEmail = async (sender, message) => {
     try {
-      const response = await fetch('http://localhost:5000/send-email', {
+      const response = await fetch('https://portfolio-email-server-3gxv.onrender.com/send-email', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
