@@ -1,13 +1,11 @@
 import React from "react";
-
+import "./styles/Profile.scss";
 
 export default function Profile() {
     return (
         <div id="profile-container">
             <div id="profile-content">
-                <h3>I'm <span id="profilename">Rohb,</span></h3>
-                <p>A Computer Engineering</p>
-                <p>Student</p>
+                <p>I'm <span className="txt-accent title">Rohb</span>,<br/> A <span className="txt-accent">Computer Engineering</span> Student</p>
             </div>
         </div>
     )

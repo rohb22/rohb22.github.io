@@ -2,56 +2,56 @@
     "skills" : [
         {
             "id": 1,
-            "path": "/icons/c.svg",
+            "path": "/icons/c.png",
             "name": "C"
         
         },
         {
             "id": 2,
-            "path": "/icons/cpp.svg",
+            "path": "/icons/cpp.png",
             "name": "C++"
         
         },
         {
             "id": 3,
-            "path": "/icons/css3.svg",
+            "path": "/icons/css3.png",
             "name": "CSS"
         
         },
         {
             "id": 4,
-            "path": "/icons/git.svg",
+            "path": "/icons/git.png",
             "name": "Git"
         
         },
 
         {
             "id": 6,
-            "path": "/icons/html5.svg",
+            "path": "/icons/html5.png",
             "name": "HTML"
         
         },
         {
             "id": 7,
-            "path": "/icons/java.svg",
+            "path": "/icons/java.png",
             "name": "Java"
         
         },
         {
             "id": 8,
-            "path": "/icons/javascript.svg",
+            "path": "/icons/javascript.png",
             "name": "Javascript"
         
         },
         {
             "id": 9,
-            "path": "/icons/python.svg",
+            "path": "/icons/python.png",
             "name": "Python"
         
         },
         {
             "id": 10,
-            "path": "/icons/react.svg",
+            "path": "/icons/react.png",
             "name": "React/React Native"
        
         }

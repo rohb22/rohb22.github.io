@@ -1,5 +1,6 @@
 import React from "react"
 import projectsdb from "../projects.json"
+import "./styles/Profile.scss"
 
 
 function Project({photo, name, githubLink, siteLink}) {
