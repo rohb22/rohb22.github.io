@@ -14,7 +14,7 @@ function Skill({ icon, name }) {
 export default function Skills() {
     return (
         <div id="skills-container">
-            <h1>My Tech Stack</h1>
+            <h1 className="header">My Tech Stack</h1>
             <div id="skills">
                 {skillsdb.skills.map((item, i) => (
                     <Skill icon={item.path} name={item.name} key={i} />
