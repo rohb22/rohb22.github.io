@@ -3,16 +3,14 @@
         {
             "id": 1,
             "name": "ToDo List",
-            "siteLink": null,
-            "repoLink": "https://github.com/rohb22/todo-list",
-            "photo": "/project-screenshots/todolist.jpg"
+            "description": "An app that keep track of tasks",
+            "repoLink": "https://github.com/rohb22/todo-list"
         },
         {
             "id": 2,
             "name": "Project Manager",
-            "siteLink": null,
-            "repoLink": "https://github.com/rohb22/Project-Manager",
-            "photo": "/project-screenshots/projectmanager.jpg"
+            "description": "An app that keep track of ideas in orderly manner",
+            "repoLink": "https://github.com/rohb22/Project-Manager"
         }
 
     ]
