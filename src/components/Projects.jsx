@@ -1,29 +1,40 @@
-import React from "react"
-import projectsdb from "../projects.json"
-import "./styles/Profile.scss"
+import React from "react";
+import Slider from "react-slick";
+import projectsdb from "../projects.json";
+import "./styles/Projects.scss";
 
-
-function Project({photo, name, githubLink, siteLink}) {
-
+function Project({ name, description, githubLink }) {
     return (
         <div className="project">
-            <img className="project-ss" src={photo} alt="Screenshot of the project" />
             <h4>{name}</h4>
-            <a target="_blank" href={githubLink}>View Repository</a>
-            {(siteLink != null) && (<a target="_blank"  href={siteLink}>View Site</a>)}
+            <p>{description}</p>
+            <a target="_blank" href={githubLink} rel="noreferrer">View Repository</a>
         </div>
-    )
+    );
 }
 
 export default function Projects() {
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 800,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+    };
+
     return (
         <div id="projects-container">
-            <h3>Projects</h3>
-            <div id="projects">
+            <h1 className="header">Projects</h1>
+            <Slider {...settings} id="projects-wrapper">
                 {projectsdb.projects.map((item, i) => (
-                    <Project photo={item.photo} name={item.name} githubLink={item.repoLink} siteLink={item.siteLink} key={i} />
+                    <Project
+                        key={i}
+                        name={item.name}
+                        githubLink={item.repoLink}
+                        description={item.description}
+                    />
                 ))}
-            </div>
+            </Slider>
         </div>
-    )
+    );
 }
