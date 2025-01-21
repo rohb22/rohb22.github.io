@@ -1,12 +1,39 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./dist/styles.css">
     <title>Rohb's Portfolio</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
+</head>
+<body class="container flex flex-col">
+    
+    <label class="inline-flex items-center cursor-pointer ml-7 mt-10">
+        <input type="checkbox" value="" class="sr-only peer" checked>
+        <div class="relative w-11 h-6 bg-gray-200 rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-black"></div>
+      </label>
+      
+    <div class="container flex ml-7 mt-5 items-center ">
+        <div class="flex flex-col mr-16">
+            <h1 class="font-bold text-6xl">Hi!!</h1>
+            <p class="text-xl">I'm <span class="text-3xl text-gray-400">Rohb</span></p>
+        </div>
+        <a href="https://github.com/rohb22">
+                <img src="./dist/github-original.svg" alt="githublogo"
+                class="size-32"
+                >
+        </a>
+    </div>
+    <div id="projects" class="p-5 mt-10">
+        <div class="flex flex-col p-5">
+            <div class="flex gap-2">
+                <h1 class="font-bold text-xl">Thermal Expansion</h1>
+                <a href="" class="ml-auto"><img src="./dist/github-original.svg" alt="githubicon" class="size-7"></a>
+            </div>
+            <p class="break-words text-sm">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Libero quam iusto facere quae temporibus voluptatibus, iste fuga cupiditate laboriosam vitae. ipsum dolor sit amet consectetur adipisicing elit. Culpa, deserunt.</p>
+            <p class="break-words font-bold text-sm">Tech: React Native, React, Expo, Eas, Nodemon</p>
+        </div>
+    </div>
+    <script  src="./src/main.js"></script>
+</body>
 </html>
