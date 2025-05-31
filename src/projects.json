@@ -1,0 +1,23 @@
+{
+    "projects": [
+    {
+        "title": "Project Manager",
+        "description": "A mobile app to quickly capture and organize project ideas, ensuring no great concept is forgotten.",
+        "tech": ["React Native", "Expo"],
+        "repo": "https://github.com/rohb22/Project-Manager"
+    },
+    {
+        "title": "Thermal Expansion Simulator",
+        "description": "A physics-based simulation built with Godot that visually demonstrates thermal expansion. Designed as an educational tool, it showcases fundamental physics concepts interactive and accessible.",
+        "tech": ["Godot"],
+        "repo": "https://github.com/rohb22/thermal-expansion-simulator"
+    }
+  ],
+    "sample" : [
+        {
+            "title": "TaskFlow",
+            "description": "A minimalist task management application built with React and Node.js. Features real-time collaboration and a clean, distraction-free interface.",
+            "tech": ["React", "Node.js", "Socket.io", "MongoDB"]
+        }
+    ]
+}
