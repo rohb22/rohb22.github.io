@@ -11,6 +11,12 @@
         "description": "A physics-based simulation built with Godot that visually demonstrates thermal expansion. Designed as an educational tool, it showcases fundamental physics concepts interactive and accessible.",
         "tech": ["Godot"],
         "repo": "https://github.com/rohb22/thermal-expansion-simulator"
+    },
+    {
+        "title": "Ayanon Timer",
+        "description": "A minimalist productivity tool designed to help students manage their study sessions effectively. It features a clean interface with countdown functionality, session tracking, and optional break reminders to support focused, distraction-free learning.",
+        "tech": ["React"],
+        "repo": "https://github.com/rohb22/ayanontimer"
     }
   ],
     "sample" : [
