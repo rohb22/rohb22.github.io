@@ -17,6 +17,12 @@
         "description": "A minimalist productivity tool designed to help students manage their study sessions effectively. It features a clean interface with countdown functionality, session tracking, and optional break reminders to support focused, distraction-free learning.",
         "tech": ["React"],
         "repo": "https://github.com/rohb22/ayanontimer"
+    },
+    {
+        "title": "Bookmark",
+        "description": "Personal use bookmark for pdf books",
+        "tech": ["JS"],
+        "repo": "https://github.com/rohb22/bookmark"
     }
   ],
     "sample" : [
